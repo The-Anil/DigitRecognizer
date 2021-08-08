@@ -1,0 +1,15 @@
+{% extends "hr/header.html" %}
+
+{% block content %}
+<body>
+    <h1>HandWriting Recognition</h1>
+    <b>Draw one number at a time</b>
+    <hr>
+    <canvas id="canvas" width="200px" height="200px" style="border:1px solid"></canvas><br><br>
+    <!-- <a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a><br><br> -->
+    <button type="button" id="send-my-url-to-django-button">Submit for Processing </button><br><br>
+    <h3 id="prediction"></h3>
+    {% load static %}
+    <script src="{% static 'hr/js/index.js' %}"></script>
+</body>
+{% endblock %}
